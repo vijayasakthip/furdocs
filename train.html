@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Training Page</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+  integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet">
+      <script src="https://kit.fontawesome.com/9e6d3f1177.js" crossorigin="anonymous"></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fur-Doc</title>
+        <link rel="icon" href="paw.png">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" 
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet">
+          <script src="https://kit.fontawesome.com/9e6d3f1177.js" crossorigin="anonymous"></script>
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&display=swap" rel="stylesheet">
+          <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+          <link rel="stylesheet" href="style.css">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
+            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="path/to/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+        <style>
+            
+        #scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 1%;
+    right: 2%;
+    background-color:  hsl(0, 0%, 0%);
+    color:  hsl(36 100% 38%);
+    border: 30%;
+    border-radius: 50%;
+    padding: 0.5%;
+    cursor: pointer;
+    box-shadow: 0 0 0 4px  hsl(36 100% 38%);
+    z-index: 1;
+    }
+
+    .navbar-brand {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      font-size: 1.5rem;
+      background-color: black;
+      border-radius: 50px;
+      padding: 20px;
+      margin-left: 9.5%;
+      margin-top: 2%;
+    }
+    @media(max-width:425px)
+    {
+      .navbar-brand {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      font-size: 10px;
+      background-color: black;
+      border-radius: 50px;
+      padding: 10px;
+      margin-left: 5%;
+      margin-top: 2%;
+    }
+    }
+    @media(max-width:350px)
+    {
+      .navbar-brand {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      font-size: 10px;
+      background-color: black;
+      border-radius: 50px;
+      padding: 10px;
+      margin-left: 5%;
+      margin-top: 2%;
+    }
+    }
+  
+
+    .navbar-nav .nav-link {
+      font-family: cursive;
+      /* font-weight: bolder; */
+      color: #000000;
+     
+    }
+
+    .navbar-nav .nav-item {
+      margin-right: 10ex;
+      margin-top: 2.5%;
+    }
+    @media (max-width:1024px){
+        .navbar-nav .nav-item {
+      margin-right: 3ex;
+      margin-top: 2.5%;
+    }
+    }
+    @media (max-width:500px){
+        .navbar-nav .nav-item {
+            text-align: center;
+            margin-right: 0px;
+            margin-top: 2.5%;
+      
+    }
+    }
+  
+
+      
+        @media (min-width:580px){
+          nav a {
+        color: #000000; 
+        text-decoration: none;
+        padding: 15px 20px;
+        display: inline-block;
+        transition: background-color 0.8s ease;
+        margin-right: auto;
+        padding-right: 20px;
+        margin-left: auto;
+       font-family: cursive;
+        
+        }
+        }
+        @media(min-width:1020px){
+          nav a {
+        color: #000000; 
+        text-decoration: none;
+        padding: 15px 20px;
+        display: inline-block;
+        transition: background-color 0.8s ease;
+        margin-right: auto;
+        padding-right: 20px;
+        margin-left:auto;
+       font-family: cursive;
+        
+        }
+        }
+   
+
+    .tatamotors{
+       background-color: hsl(0, 0%, 0%);
+  color: #fff;
+  border: none;
+  padding: 2.5% ;
+  font-size: large;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 33%;
+  animation: fadeIn 1s ease-out;
+    }
+    @media(max-width:425px){
+      
+    .tatamotors{
+       background-color: hsl(0, 0%, 0%);
+  color: #fff;
+  border: none;
+  padding: 2.5% ;
+  font-size: large;
+  cursor: pointer;
+  border-radius: 10px;
+  height: 40px;
+  width: 100%;
+  animation: fadeIn 1s ease-out;
+    }
+    }
+
+    .tatamotors:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: #000000;
+}
+   
+    .contact-button {
+  background-color: #fd7e14;
+  color: #fff;
+  border: none;
+  padding: 1.5% ;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 15%;
+  animation: fadeIn 1s ease-out;
+  transition: 0.7s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.contact-button:hover {
+  background-color: hsl(36, 100%, 50%);
+}
+main {
+      max-width: 100%;
+      margin: 3% auto;
+
+      padding: 5%;
+      background-color:#fd7e14;
+      /* border-radius: 10%; */
+      box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    }
+    
+    .cta-container {
+      display: flex;
+      justify-content: space-around;
+      /* margin-right: 26%; */
+      width: 100%;
+      /* margin-bottom: 30px; */
+    }
+
+    .cta-box {
+      flex: 1;
+      padding: 8%;
+      border: 1px solid #ddd;
+      border-radius: 28px;
+      /* width: 100%; */
+      /* text-align: center; */
+      transition: transform 0.3s ease-in-out;
+    }
+        
+    .row{
+      --bs-gutter-x:0 !important
+    }
+
+    .rpower{
+      position: relative;
+      text-align: center;
+      bottom: 600px;
+      
+    }
+    .invest{
+      position: relative;
+      
+      bottom: 600px;
+    }
+
+    #mango{
+      background-color: #fd7e14;
+      padding: 1%;
+    }
+    #ui{
+      position: absolute;
+      top: 284%;
+      right: 70%;
+      height: 120px;
+      
+            
+    }
+
+    /* #opp{
+     height: 400px;
+     margin-top: 50px;
+
+    } */
+     @media  (max-width:500px){
+        #dogimage{
+          
+        width: 100%;
+        height: 300px;
+
+}
+     }
+
+     @media(min-width: 320px) {
+  .rpower {
+    position: relative;
+  bottom: 260px;
+
+  text-align: center;
+
+  font-family:'Lucida Handwriting', 'Brush Script MT' ;
+  width: 100%;
+  font-size: 5px;
+
+
+}
+}
+    @media(min-width: 600px) {
+  .rpower {
+    position: relative;
+  bottom: 260px;
+  left: 10%;
+  text-align: center;
+
+  font-family:'Lucida Handwriting', 'Brush Script MT' ;
+  width: 80%;
+  font-size: 10px;
+
+
+}
+}
+@media(min-width: 1024px) {
+  .rpower {
+    position: relative;
+  bottom:360px;
+
+  left: 10%;
+  text-align: center;
+
+  font-family:'Lucida Handwriting', 'Brush Script MT' ;
+  width: 80%;
+  font-size: 13px;
+
+
+}
+}
+@media (min-width: 1200px) {
+  .rpower {
+    position: relative;
+    bottom: 480px;
+    left:0%;
+    text-align: center;
+   
+  font-family:'Lucida Handwriting', 'Brush Script MT' ;
+  width: 100%;
+  font-size: 15px;
+  color: #ffffff;
+}
+}
+@media(min-width: 1440px) {
+  .rpower {
+    position: relative;
+  bottom:490px;
+
+  left: 10%;
+  text-align: center;
+
+  font-family:'Lucida Handwriting', 'Brush Script MT' ;
+  width: 80%;
+  font-size: 13px;
+
+
+}
+}
+@media(min-width: 2560px) {
+  .rpower {
+    position: relative;
+  bottom:870px;
+
+  left: 10%;
+  text-align: center;
+
+  font-family:'Lucida Handwriting', 'Brush Script MT' ;
+  width: 80%;
+  font-size: 18px;
+
+
+}
+}
+@media only screen and (min-width: 320px) {
+  .invest {
+    position: relative;
+    bottom: 260px;
+   
+  font-family:'Lucida Handwriting', 'Brush Script MT' ;
+  width: 100%;
+  font-size: 10px;
+  color: #ffffff;
+}
+}
+@media only screen and (min-width: 600px) {
+  .invest {
+    position: relative;
+    bottom: 270px;
+   
+  font-family:'Lucida Handwriting', 'Brush Script MT' ;
+  width: 100%;
+  font-size: 10px;
+  color: #ffffff;
+}
+}
+@media only screen and (min-width: 1024px) {
+  .invest {
+    position: relative;
+    bottom: 360px;
+   
+  font-family:'Lucida Handwriting', 'Brush Script MT' ;
+  width: 100%;
+  font-size: 15px;
+  color: #ffffff;
+}
+}
+@media only screen and (min-width: 1200px) {
+  .invest {
+    position: relative;
+    bottom: 480px;
+   
+  font-family:'Lucida Handwriting', 'Brush Script MT' ;
+  width: 100%;
+  font-size: 15px;
+  color: #ffffff;
+}
+}
+@media only screen and (min-width: 1440px) {
+  .invest {
+    position: relative;
+    bottom: 490px;
+   
+  font-family:'Lucida Handwriting', 'Brush Script MT' ;
+  width: 100%;
+  font-size: 15px;
+  color: #ffffff;
+}
+}
+@media only screen and (min-width: 2560px) {
+  .invest {
+    position: relative;
+    bottom: 860px;
+   
+  font-family:'Lucida Handwriting', 'Brush Script MT' ;
+  width: 100%;
+  font-size: 40px;
+  color: #ffffff;
+}
+}
+
+
+@media only screen and (max-width: 600px) {
+  #ui {
+    /* position: absolute;
+  top: 234%;
+  left: 38%;
+  font-family:'Lucida Handwriting', 'Brush Script MT' ;
+  height: 100px;
+  
+  font-size: 9px;
+  color: #ffffff; */
+  display: none;
+  
+}
+}
+@media(max-width: 1024px) {
+  #opp {
+  height: 290px;
+  margin-left: 0px;
+  font-size: 9px;
+  color: #ffffff;
+margin-bottom: 40px;
+}
+}
+@media(max-width: 768px) {
+  #opp {
+  height: 300px;
+  margin-left:130px;
+
+  font-size: 9px;
+  color: #ffffff;
+margin-bottom: 40px;
+}
+}
+@media(max-width: 600px) {
+  #opp {
+  height: 300px;
+  margin-left: 0px;
+  font-size: 9px;
+  color: #ffffff;
+margin-bottom: 40px;}
+}
+
+@media(max-width: 425px) {
+  #opp {
+  height: 200px;
+  width: 100%;
+  margin-left: 0px;
+  font-size: 9px;
+  color: #ffffff;
+margin-bottom: 40px;
+}
+}
+@media(max-width: 380px) {
+  #opp {
+  height: 200px;
+  margin-left: 0px;
+  font-size: 9px;
+  color: #ffffff;
+margin-bottom: 40px;
+}
+}
+
+#subex{
+  position:relative;
+  left: 45%;
+  bottom: 47%;
+}
+@media(min-width: 320px) {
+  #subex {
+    position: relative;
+    left: 0%;
+    height: 200px;
+    width: 100%;
+    
+  
+}
+}
+@media(min-width: 600px) {
+  #subex {
+    position: relative;
+    left: 0%;
+    height:300px;
+    width: 600px;
+  
+}
+}
+@media(min-width: 1024px) {
+  #subex{
+  position:relative;
+    left: 0%;
+    height:300px;
+    width: 800px;
+
+}  
+}
+@media(min-width: 1300px) {
+  #subex{
+  position:relative;
+    left: 30%;
+    height:300px;
+    width: 900px;
+
+}  
+  
+}
+@media(min-width: 1440px) {
+  #subex{
+  position:relative;
+    left: 0%;
+    height:400px;
+    width: 1200px;
+
+}  
+  
+}
+@media(min-width: 2560px) {
+  #subex{
+  position:relative;
+    left: 0%;
+    height:600px;
+    width: 2000px;
+
+}  
+  
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .contact-button {
+   width: 100px;
+   padding: 10px;
+  
+}
+}
+
+/* @media only screen and (max-width: 600px) {
+  body{
+    --bs-gutter-x:0 !important
+  }
+} */
+
+
+
+.navbar-toggler {
+  background-color:  hsl(36 100% 38%);
+}
+
+/* Change the color of the lines in the toggle button */
+.navbar-toggler-icon {
+  color: rgb(0, 0, 0);
+}
+
+#uuuu{
+      color: black;
+    }
+
+    #uuuu:hover{
+    color: hsl(36, 100%, 50%);
+    transition: 0.7s;
+    }
+
+    #cb{
+    font-family: 'Lucida Handwriting', 'Brush Script MT', cursive; 
+    color:  hsl(36 100% 38%); 
+    font-size: x-large;
+}
+@media (max-width:500px){
+    #cb{
+    font-family: 'Lucida Handwriting', 'Brush Script MT', cursive; 
+    color:  hsl(36 100% 38%); 
+    font-size:20px;
+    margin-left: 8px;
+}
+}
+.social-icons i {
+            font-size: 15px;
+            border-radius: 50%;
+            background-color: hsl(36 100% 38%);
+            color: #fff;
+            margin: 0 10px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .social-icons i:hover {
+            cursor: pointer;
+        }
+        #facebook{
+            margin-left: 45%;
+        }
+        @media (max-width:768px){
+           #facebook{
+            margin-left:45%
+            
+           }
+        }
+        @media (max-width:450px){
+           #facebook{
+            margin-left: 40%;
+           }
+        }
+        @media (max-width:375px){
+           #facebook{
+            margin-left: 36%;
+           }
+        }
+        @media (max-width:350px){
+           #facebook{
+            margin-left: 35%;
+           }
+        }
+#brownimg{
+     padding: 10%;
+}
+@media (max-width:500px){
+    #brownimg{
+     padding: 3%;
+}
+}
+@media (max-width: 1400px) {
+  .cta-container {
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .cta-container {
+    flex-direction: column; /* Stack items vertically */
+  }
+}
+
+
+
+
+  
+
+  .cta-box {
+    width: 100%; /* Full width on smaller screens */
+    margin-bottom: 10px; 
+    margin-right: 5px;
+
+  }
+
+
+
+
+  /* #zxc{
+    position: absolute;
+    top: 10%;
+  } */
+
+
+
+    /* #qwe{
+        max-width: 100%;
+      margin: 3% auto;
+      margin-right: 10%;
+      margin-left: 7%;
+      padding: 5%;
+      background-color:  hsl(0, 0%, 100%);
+      border-radius: 10%;
+      box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);   
+    } */
+        
+        
+          </style>
+        </head>
+    <body>
+      <div class="container-fluid">
+<div id="scrollToTopBtn" onclick="scrollToTop()">
+    <i class="fa-solid fa-arrow-up" style="margin-left: 35%;" ></i>
+    <p style="font-size: x-small;"><b>Back to Top </b></p>
+</div>
+
+<nav class="navbar navbar-expand-sm navbar-dark" id="navb" >
+
+  <a class="navbar-brand" id="cb" href="" style="font-family: 'Lucida Handwriting', 
+  'Brush Script MT', cursive; color:  hsl(36 100% 38%); font-size: x-large; "><b class="sss"> 
+    <i class="fa-solid fa-shield-dog"></i> Fur-Docs </b></a> 
+    
+  <div class="d-flex flex-row me-3">
+    <button class="navbar-toggler" id="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+ 
+ <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+  <ul class="navbar-nav ms-auto" >
+    <li class="nav-item">
+      <a class="nav-link" href="index.html" id="uuuu">Home</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="doc.html" id="uuuu">Doctor</a> 
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="pat.html" id="uuuu">Forbearer</a> 
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="ser.html" id="uuuu">Services</a> 
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#ynot" id="uuuu">Training</a> 
+    </li>
+    <!-- <li class="nav-item">
+      <a class="nav-link" href="#pla" style="color: black;">Contact</a> 
+    </li> -->
+  </ul>
+</div>
+</nav>
+<div class="row" style="padding: 0%;">
+<div class="col-sm-12 ">
+  <h2 style="font-weight: 700;" > The <span style="color:  hsl(36, 100%, 50%);font-family: 'Lucida Handwriting', 
+    'Brush Script MT', cursive; font-weight: 400; ">Whisker Whiz :</span> shaping behaviors with love and treats. </h2>
+    <p style="font-weight: 500;"> Transform your pup into a well-behaved, joyful family member with smart training tips, 
+        positive reinforcement and boundless love and patience. </p>
+        <button class="contact-button">Contact Us</button>
+
+        <div class="col-sm-4">
+        <img src="husky_yarning(2).jpg" alt=""  id="subex">
+      </div>
+     
+      <!-- <div class="col-sm-5">
+          <img src="husky(1).jpg" alt="" style="position: absolute;top: 1%;">
+      </div> -->
+        
+    
+</div>
+<div class="row">
+<img src="training.png" alt="" id="dogimage" >
+</div>
+<div class="rpower">
+<h1 style="font-family: Fredoka One; color: aliceblue; font-size: 400%; font-weight: 900;">JOIN OUR CLUB</h1>
+<!-- <p>Enlist your pets in our exclusive club for expert care, memorable experiences, and lasting companionship adventures.</p> -->
+</div>
+<div class="invest">
+<center><p style="color:  hsl(37, 12%, 21%); font-weight: 500;font-family: cursive;">Embark 
+  on a journey of companionship by joining our exclusive pet club. Experience expert care, <br>
+   unforgettable moments, and a community dedicated to fostering the well-being of your beloved pets. </p></center>
+
+</div>
+<div class="row" style=" padding: 2%;" id="poll">
+    <div class="col-sm-7">
+        <div class="vit" id="ynot" style="font-family: Georgia, 'Times New Roman', Times, serif;;">
+       
+    
+            <main style="color: aliceblue;">
+                <br>
+                <h2 style="font-weight: 600;">Welcome to the world of <br><span style="font-family: 'Lucida Handwriting', 
+                    'Brush Script MT', cursive; color: hsl(0, 0%, 0%);"> Fur-Docs </span></h2><br>
+              <div class="content-section">
+                <!-- <h3 style="color:  hsl(36 100% 38%);" > <i class="fa-brands fa-gratipay"></i> Holistic Pet Wellness</h3> -->
+                <p style="font-size: larger;">Welcome to a world of wagging tails and mindful training. Explore our canine wisdom 
+                    center, where each lesson strengthens the bond, shapes behavior, and paves the way 
+                    for a harmonious partnership.</p>
+              </div><br>
+              <div class="content-section">
+                <!-- <h3 style="color:  hsl(36 100% 38%);" > <i class="fa-solid fa-notes-medical"></i> Compassionate Veterinary Care</h3> -->
+                <p><i class="fa-solid fa-circle-check" style="color: #000000;"></i>   Structured sessions enhance learning efficiency.</p>
+              </div>
+              <div class="content-section">
+                <!-- <h3 style="color:  hsl(36 100% 38%);" > <i class="fa-solid fa-notes-medical"></i> Paws and Progress</h3> -->
+                <p><i class="fa-solid fa-circle-check" style="color: #000000;"></i>  Build a stronger bond with professional support.</p>
+              </div>
+              <div class="content-section">
+                <!-- <h3 style="color:  hsl(36 100% 38%);" > <i class="fa-solid fa-notes-medical"></i> Paws and Progress</h3> -->
+                <p><i class="fa-solid fa-circle-check" style="color: #000000;"></i> Specialized methods sculpt exceptional behavioral harmony.</p>
+              </div>
+              <div class="content-section">
+                <!-- <h3 style="color:  hsl(36 100% 38%);" > <i class="fa-solid fa-notes-medical"></i> Paws and Progress</h3> -->
+                <p><i class="fa-solid fa-circle-check" style="color: #000000;"></i> Craft a one-of-a-kind bond together.</p>
+              </div><br>
+                <button class="tatamotors"> <span>Discover more </span> <i class="fa-solid fa-arrow-right"></i></button>
+              <!-- <div class="divider"></div> -->
+    
+             
+          
+              
+            </main>
+          
+            
+            
+           
+          </div>
+    </div>
+    <div class="col-sm-5">
+     
+  <div id="qwe">
+    <div class="cta-container-fluid ">
+      <div class=" cta-box" style="background-color:  hsl(38 61% 94%);">
+        <center><h4>Canine Fitness and Wellness Programs </h4></center>
+        <p style="color: #fd7e14;font-weight: 600;">Individualized wellness regimens synergize physical vigor, mental acuity, and emotional balance.</p>
+      </div>
+      <div class="cta-box" style="background-color: #000000;">
+        <center><h4 style="color: #fd7e14;">Healing and Aromatherapy Session</h4></center>
+        <p style="color: #fff;">
+          Aromatherapy cultivates tranquility, promoting healing and enhancing overall well-being for pets.</p>
+      </div>
+    </div>
+
+    <div class="cta-container-fluid">
+      <div class="cta-box" style="background-color: #000000;">
+       <center><h4 style="color: #fd7e14;"> Pet Tricks and Performance Arts</h4></center>
+        <!-- <p>Elevate pet engagement through mesmerizing tricks and unforgettable performance arts sessions .</p> -->
+        <p style="color: #fff;">
+          Unleash delightful tricks, crafting performance arts that strengthen your pet connection.</p>
+      </div>
+      <div class="cta-box" style="background-color:  hsl(38 61% 94%);">
+        <center><h4>Dog Rehabilitation Programs</h4></center>
+        <p style="color: #fd7e14;font-weight: 600;">Transform behavior with our canine rehab,
+           fostering well-being and harmony. </p>
+      </div>
+    </div>
+
+    <hr>
+<!-- 
+    <p>Embark on a journey of transformation with our canine rehabilitation programs,
+       cultivating enduring well-being and fostering harmonious companionship.</p> -->
+</div>
+    </div>
+
+</div>
+<div class="row"  id="brownimg">
+    <img src="Brown Polaroid Minimalist Pet Care & Supply Banner (1200 x 600 px).svg" alt="">
+</div>
+<div class="row" id="mango">
+  <div class="col-lg-5">
+    <img src="dog_training _collage.svg" alt="" id="opp">
+  </div>
+  <div class="col-lg-7">
+     <h1 style="text-align: center;">
+      <b ><span style="font-family:'Lucida Handwriting', 
+      'Brush Script MT', cursive;">TailWag
+       </span> Tutoring Hub</b></h1><br>
+      <!-- <img src="mr.black.png" alt=""> -->
+     <p style="font-size: large;color: aliceblue; font-weight: 400;"><span> Our experienced trainers craft tailored approaches to cater to the unique needs
+       and personality of your dog. Through positive reinforcement techniques, we create
+        a supportive learning environment, building a strong bond between you and your Tail-Wagger.
+         Our state-of-the-art facilities provide an optimal setting for effective training, ensuring
+          a well-rounded development for your dog. Join us on this transformative journey, and let's 
+          unlock the full potential of your canine companion at Pawformance Excellence Academy! <br><br></span>
+          <span style="color: #000000; font-weight: 500;">In the heart of TailWag Tutoring Hub, education and joy join paws for a unique and lively
+          experience. As we close the book on each lesson, the wagging tails leave an unforgettable 
+          imprint, reminding us that learning is not just a journey but a dance of delight. TailWag's 
+          approach transcends traditional boundaries, turning education into a celebration where 
+          understanding and happiness twirl hand in paw. So, let's conclude our time at <span style="color:  hsl(0, 0%, 100%); font-family:'Lucida Handwriting', 
+          'Brush Script MT', cursive; ;"><b>Fur-docs</b></span>
+           not just as learners but as partners in a spirited waltz, where every step forward is 
+           accompanied by the cheerful beat of furry companionship. </span></p>
+    </div>
+   
+</div>
+<!-- <div>
+  <img id="ui" src="mr.black.png" alt="">
+</div> -->
+<footer style="padding: 3%; background-color: hsl(38 61% 94%); color: #fd7e14;">
+  <!-- <img src="micmac_solutions_private_limited_logo.jpg" alt=""> -->
+<center><b>2023 All right reserved by Mic & Mac Solutions
+   </center>
+   <div class="social-icons">
+   <i class="fa-brands fa-facebook" id="facebook" ></i>
+  <i class="fa-brands fa-square-instagram" ></i>
+  <i class="fa-brands fa-x-twitter"></i></b>
+  </div>
+</div>
+
+
+
+</footer>
+
+<!-- <div>
+  <img src="Dog Outline (5 x 5 cm).svg" alt="" id="zxc">
+</div> -->
+
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+ integrity="sha384-eE1oYAX+KJLd2Q9gA1imq5s9yRObyd23FQF83fN+OpK4DH+8Ch/4FZ8OuFqFqdM2" crossorigin="anonymous"></script>
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+ integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+ 
+ <script>
+  window.onscroll = function() {
+      scrollFunction();
+  };
+
+  function scrollFunction() {
+      var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          scrollToTopBtn.style.display = "block";
+      } else {
+          scrollToTopBtn.style.display = "none";
+      }
+  }
+
+  function scrollToTop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+  }
+</script>
+
+<script>
+  document.getElementById('navbar-toggler').addEventListener('click', function() {
+    // Change the top value of .cot when the button is clicked
+    var cotElement = document.querySelector('.rpower');
+
+    // Check the current top value and toggle between two values (e.g., '11%' and '627.1%')
+    var newTop = cotElement.style.top === '116.8%' ? '84.5%' : '116.8%';
+
+    // Apply the new top value
+    cotElement.style.top = newTop;
+  });
+</script>
+
+<script>
+  document.getElementById('navbar-toggler').addEventListener('click', function() {
+    // Change the top value of .cot when the button is clicked
+    var cotElement = document.querySelector('.invest');
+
+    // Check the current top value and toggle between two values (e.g., '11%' and '627.1%')
+    var newTop = cotElement.style.top === '122%' ? '89%' : '122%';
+
+    // Apply the new top value
+    cotElement.style.top = newTop;
+  });
+</script>
+
+</body>

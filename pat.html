@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctor Page</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+  integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet">
+      <script src="https://kit.fontawesome.com/9e6d3f1177.js" crossorigin="anonymous"></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fur-Doc</title>
+        <link rel="icon" href="paw.png">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" 
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet">
+          <script src="https://kit.fontawesome.com/9e6d3f1177.js" crossorigin="anonymous"></script>
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&display=swap" rel="stylesheet">
+          <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+          <link rel="stylesheet" href="style.css">
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
+            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="path/to/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    
+      </head>
+  <style>
+    /* Customize your styles here */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .navbar-brand {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      font-size: 1.5rem;
+      background-color: black;
+      border-radius: 50px;
+      padding: 20px;
+      margin-left: 9.5%;
+      margin-top: 2%;
+    }
+    @media(max-width:425px)
+    {
+      .navbar-brand {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      font-size: 10px;
+      background-color: black;
+      border-radius: 50px;
+      padding: 10px;
+      margin-left: 5%;
+      margin-top: 2%;
+    }
+    }
+    @media(max-width:350px)
+    {
+      .navbar-brand {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      font-size: 10px;
+      background-color: black;
+      border-radius: 50px;
+      padding: 10px;
+      margin-left: 5%;
+      margin-top: 2%;
+    }
+    }
+
+
+    .navbar-nav .nav-link {
+      font-family: cursive;
+      /* font-weight: bolder; */
+      color: #000000;
+     
+    }
+
+    .navbar-nav .nav-item {
+      margin-right: 10ex;
+      margin-top: 2.5%;
+    }
+    @media (max-width:1024px){
+        .navbar-nav .nav-item {
+      margin-right: 3ex;
+      margin-top: 2.5%;
+    }
+    }
+    @media (max-width:500px){
+        .navbar-nav .nav-item {
+      margin-right: 0px;
+      margin-top: 2.5%;
+    }
+    }
+
+      
+        @media (min-width:580px){
+          nav a {
+        color: #000000; 
+        text-decoration: none;
+        padding: 15px 20px;
+        display: inline-block;
+        transition: background-color 0.8s ease;
+        margin-right: auto;
+        padding-right: 20px;
+        margin-left: auto;
+       font-family: cursive;
+        
+        }
+        }
+        @media(min-width:1020px){
+          nav a {
+        color: #000000; 
+        text-decoration: none;
+        padding: 15px 20px;
+        display: inline-block;
+        transition: background-color 0.8s ease;
+        margin-right: 40px;
+        padding-right: 20px;
+        margin-left: 30%;
+       font-family: cursive;
+        
+        }
+        }
+      
+
+        .content-section {
+      margin-bottom: -20px;
+      /* border: 1px solid #000000; */
+      /* border-radius: 58px; */
+      padding: 20px;
+    }
+
+    main {
+      max-width: 110ex;
+      margin: 20px auto;
+      margin-right: 30px;
+      margin-left: 30px;
+      /* padding: 20px; */
+      background-color: bisque;
+      /* border-radius: 10%; */
+      box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    }
+
+    .divider {
+            background-color: #000000;
+            /* height: 1px; */
+            margin: 2% ;
+        }
+
+        #ioc>img{
+           margin-top: 5%;
+           /* size: 50%; */
+           /* height: 30%; */
+           /* margin-right: 450px; */
+           margin-left: 6%;
+           /* margin-right: 200px; */
+            max-width: 100%;
+           /* position: absolute; */
+           height:80%;
+           
+        }
+        @media (max-width:500px){
+            #ioc>img{
+           margin-top: 5%;
+           margin-left: 5%;
+           max-width: 100%;
+           height:85%
+        }
+    }
+
+        .star{  
+          /* max-width: 110ex; */
+      margin: 3% auto;
+      margin-right: 7%;
+      margin-left: 5%;
+      /* margin-left: 10px; */
+      padding: 1%;
+      background-color: rgb(255, 255, 255);
+      /* border-radius: 10%; */
+      box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+
+        }
+
+        #recl>img{
+          margin-top: 7%;
+           
+           height: 85%;
+           /* position: absolute;
+           left: 730px; */
+           width: 90%;
+           /* margin-left: 200px; */
+           /* padding: 10px; */
+           
+        }
+        @media (max-width:500px){
+            #recl>img{
+            margin-top: 7%;
+           height: 90%;
+           width: 88%;
+           margin-left: 5%;
+        }
+    }
+
+        #scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 0.5%;
+    right: 2%;
+    background-color:  hsl(0, 0%, 0%);
+    color:  hsl(36 100% 38%);
+    border: 30%;
+    border-radius: 50%;
+    padding: 0.5%;
+    cursor: pointer;
+    box-shadow: 0 0 0 4px  hsl(36 100% 38%);
+    z-index: 1;
+}
+
+#cb{
+  margin-left: 4%; 
+  margin-top: 2%;
+}
+
+.row{
+  --bs-gutter-x:0 !important
+}
+p{
+  font-size: large;
+}
+
+.navbar-toggler {
+  background-color:  hsl(36 100% 38%);
+}
+
+/* Change the color of the lines in the toggle button */
+.navbar-toggler-icon {
+  color: rgb(0, 0, 0);
+}
+
+
+    #uuuu{
+      color: black;
+      text-align:center;
+    }
+
+    #uuuu:hover{
+    color:hsl(36 100% 38%);
+    transition: 0.7s;
+    }
+
+    #companion{
+        padding: 50px;
+        background-color:hsl(38 61% 94%);
+    }    
+    @media (max-width:500px){
+        #companion{
+            padding:20px;
+            background-color:hsl(38 61% 94%);
+        }
+    }
+    .social-icons i {
+            font-size: 15px;
+            border-radius: 50%;
+            background-color: hsl(36 100% 38%);
+            color: #fff;
+            margin: 0 10px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .social-icons i:hover {
+            cursor: pointer;
+        }
+        #facebook{
+            margin-left: 45%;
+        }
+        @media (max-width:768px){
+           #facebook{
+            margin-left:45%
+            
+           }
+        }
+        @media (max-width:450px){
+           #facebook{
+            margin-left: 40%;
+           }
+        }
+        @media (max-width:375px){
+           #facebook{
+            margin-left: 36%;
+           }
+        }
+        @media (max-width:350px){
+           #facebook{
+            margin-left: 35%;
+           }
+        }
+       
+
+
+  </style>
+
+<body>
+  <div id="scrollToTopBtn" onclick="scrollToTop()">
+    <i class="fa-solid fa-arrow-up" style="margin-left: 35%;" ></i>
+    <p style="font-size: x-small;"><b>Back to Top </b></p>
+</div>
+
+<!-- <nav class="navbar navbar-expand-sm navbar-dark" id="navb" style="padding: 25px;">
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+  aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation" id="tog">
+   <span class="navbar-toggler-icon"></span>
+ </button>
+
+  <div class="container-fluid">
+  
+    <a class="navbar-brand" id="cb" href="" style="font-family: 'Lucida Handwriting', 
+    'Brush Script MT', cursive; color:  hsl(36 100% 38%); font-size: x-large; "><b class="sss"> 
+      <i class="fa-solid fa-shield-dog"></i> Fur-Doc </b></a> 
+
+   
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="pet_frontend.html"> Home <p style="font-size: x-small;color:bisque;text-align:center;"></p></a>
+        </li>&nbsp;&nbsp;
+        <li class="nav-item">
+          <a class="nav-link" href="doctor.html"> Doctor-Info <p style="font-size: x-small;color:bisque ;text-align:center;"></p></a>
+        </li>&nbsp;&nbsp;
+        <li class="nav-item">
+          <a class="nav-link" href="#ioc"> Patient-Info <p style="font-size: x-small;color:bisque ;text-align:center;" ></p></a>
+        </li>&nbsp;&nbsp;
+        <li class="nav-item">
+          <a class="nav-link" href="services.html"> Services <p style="font-size: x-small;color: bisque ; text-align:center;"></p></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="training.html"> Training <p style="font-size: x-small;color: bisque ; text-align:center;"></p></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav> -->
+
+<nav class="navbar navbar-expand-sm navbar-dark" id="navb" style="background-color:hsl(38 61% 94%)  ;">
+
+  <a class="navbar-brand" id="cb" href="" style="font-family: 'Lucida Handwriting', 
+  'Brush Script MT', cursive; color:  hsl(36 100% 38%); font-size: x-large; "><b class="sss"> 
+    <i class="fa-solid fa-shield-dog"></i> Fur-Docs </b></a> 
+    
+  <div class="d-flex flex-row me-3" >
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation" id="tog">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+ 
+ <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+  <ul class="navbar-nav ms-auto">
+    <li class="nav-item">
+      <a class="nav-link" href="index.html" id="uuuu">Home</a>
+    </li>
+
+    <li class="nav-item">
+      <a class="nav-link" href="doc.html"  id="uuuu">Doctor</a> 
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#recl" id="uuuu">Forbearer</a> 
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="ser.html" id="uuuu">Services</a> 
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="train.html" id="uuuu">Training</a> 
+    </li>
+    <!-- <li class="nav-item">
+      <a class="nav-link" href="#pla" style="color: black;">Contact</a> 
+    </li> -->
+  </ul>
+</div>
+</nav>
+
+
+<div class="row"  id="companion" >
+
+    <img src="your companion ally.svg" alt="">
+    
+</div>
+<!-- <div style="background-color: bisque;"> <br><br></div> -->
+<div class="row" style="background-color: bisque; " >
+  <div class="col-sm-12">
+    <div><br></div>
+    <div>
+  <center><h1 style="color:  hsl(36 100% 38%);"><b>Comprehensive Pet Healthcare Solutions</b></h1>
+  
+        <p style="margin-right: 20%;margin-left: 20%;font-size: large;">Experience the pinnacle of
+           pet healthcare at our center. Our team of dedicated professionals provides comprehensive 
+           services, ensuring your pet's well-being. Trust us for reliable and <br>compassionate care in 
+           every visit.
+       </p></center>
+       </div>
+       </div>
+      </div>
+
+
+   <div class="row" style="background-color: bisque;">
+    <div class="col-sm-5" id="ioc">
+           
+            <img src="Nurturing Pet Well-Being.svg" alt="">
+    </div>
+    <div class="col-sm-7" >
+      <div class="vit" style="font-family: Georgia, 'Times New Roman', Times, serif; color: hsl(38 61% 94%) ;">
+       
+    
+        <main style="background-color: hsl(36 100% 38%);">
+          <div class="content-section">
+            <h3 style="color:  #f3f3f3;" ><i class="fa-brands fa-buromobelexperte"></i> Veterinary Expertise</h3>
+            <p>Our team comprises highly skilled and experienced veterinarians dedicated to providing top-notch
+                 healthcare for your beloved pets. Rest assured, your furry friends are in the hands of 
+                 compassionate professionals who prioritize their well-being.</p>
+          </div>
+          <div class="content-section">
+            <h3 style="color:  #f3f3f3;" ><i class="fa-solid fa-hand-holding-medical"></i> Preventive Care Programs</h3>
+            <p>We offer customized preventive care plans to keep your pets healthy and happy throughout their lives. 
+                From vaccinations and regular check-ups to dietary advice,
+                 we focus on proactive measures to prevent illnesses and ensure longevity.</p>
+          </div>
+          <div class="content-section">
+            <h3 style="color:  #f3f3f3;" ><i class="fa-solid fa-diagram-project"></i> Advanced Diagnostics</h3>
+            <p>Our state-of-the-art diagnostic facilities enable accurate and swift identification of health issues. 
+                With cutting-edge technology, we can diagnose and address potential concerns early, ensuring prompt 
+                and effective treatment.</p>
+          </div>
+ 
+         
+      
+          
+        </main>
+      
+        
+       
+      </div>
+    </div>
+    </div>
+
+    <div style="background-color: bisque;"><br></div>
+
+
+
+<!-- <div style="background-color: bisque;"> <br><br ></div> -->
+<center>
+<div class="row" style="background-color:  hsl(36 100% 38%);padding: 30px;">
+    <div class="col-sm-3" style="font-family:  'Lucida Handwriting', 
+    'Brush Script MT';"><i class="fa-solid fa-person-dots-from-line" style="font-size: 40px;"></i> <br> Achived Wizards </b></div>
+    <div class="col-sm-3" style="font-family:  'Lucida Handwriting', 
+    'Brush Script MT'"><i class="fa-solid fa-stethoscope" style="font-size: 40px;" ></i> <br> Expertise </b></div>
+    <div class="col-sm-3" style="font-family:  'Lucida Handwriting', 
+    'Brush Script MT'"><i class="fa-solid fa-signal" style="font-size: 40px;"></i><br>Convinient Online Performance </div>
+    <div class="col-sm-3"style="font-family:  'Lucida Handwriting', 
+    'Brush Script MT'"><i class="fa-solid fa-dog"  style="font-size: 40px;"></i><br>Pet Care Consultation</div>
+</div>
+</center>
+
+<div class="row" style="background-color: bisque;padding: 30px; ">
+  <div class="col-sm-12">
+    <div>
+  <center><h1 style="color:  hsl(36 100% 38%);"><b>Beyond the Clinic</b></h1>
+  
+        <!-- <p style="margin-right: 200px;margin-left: 200px;font-size: large;">At Fur-Doc, our team of experienced pet doctors is dedicated to providing exceptional care for your furry companions.
+           With years of expertise in veterinary medicine, we prioritize the health and well-being of your pets.
+
+       </p> -->
+      </center>
+      </div>
+    </div>
+  </div>
+  <div style="background-color: bisque;"><br></div>
+  <div class="row" style="background-color: bisque;">
+    
+    <div class="col-sm-7">
+      <div class="vit" style="font-family: Georgia, 'Times New Roman', Times, serif;">
+       
+        <div class="star">
+        
+          <div class="content-section">
+            <h3 style="color:  hsl(36 100% 38%);" ><i class="fa-solid fa-icons"></i> Emergency Care Availability</h3>
+            <p>Swift response to pet emergencies. Dedicated team ready around the clock. 
+              Your pet's safety and well-being are our commitment where 
+              Compassion and expertise in every moment</p>
+          </div>
+          <div class="content-section">
+            <h3 style="color:  hsl(36 100% 38%);" ><i class="fa-solid fa-people-arrows"></i> Transparent Pricing and Payment Plans</h3>
+            <p>Discover transparency in pet care with clear pricing. Our flexible payment plans ensure 
+              your pet receives top-notch services without financial stress.</p>
+          </div>
+          <div class="content-section">
+            <h3 style="color:  hsl(36 100% 38%);" ><i class="fa-solid fa-house-fire"></i> Wholistic Care Approach </h3>
+            <p>Learn about our collaborations with local communities, establishing partnerships to enhance awareness, accessibility,
+               and affordability of quality veterinary care for pets in need..</p>
+          </div>
+         
+         
+      
+        </div>
+        
+      
+      
+       
+      </div>
+    </div>
+    <div class="col-sm-5" id="recl">
+      
+      <img src="Orange White Modern Clean Pet Care Service Presentation.png" alt="">
+</div>
+<div> <br><br></div>
+
+</div>
+<!-- <div> <br><br></div> -->
+<!-- <div class="row">
+  <center><h1 style="color:  hsl(36 100% 38%);"><b>Medical Milestones</b></h1>
+  
+        <p style="margin-right: 200px;margin-left: 200px;font-size: large;">At Fur-Doc, our team of experienced pet doctors is dedicated to providing exceptional care for your furry companions.
+           With years of expertise in veterinary medicine, we prioritize the health and well-being of your pets.
+
+       </p></center>
+    <div class="col-sm-5" id="ioc">
+         
+            <img src="furdoc_doctor.jpg" alt="">
+    </div>
+    <div class="col-sm-7">
+      <div class="vit" style="font-family: Georgia, 'Times New Roman', Times, serif;">
+       
+    
+        <main>
+          <div class="content-section">
+            <h2 style="color:  hsl(36 100% 38%);" ><i class="fa-solid fa-clover"></i> Innovative Treatment Protocols</h2>
+            <p>Uncover groundbreaking approaches and pioneering treatment protocols 
+              that set new benchmarks in veterinary medicine.</p>
+          </div>
+          <div class="content-section">
+            <h2 style="color:  hsl(36 100% 38%);" > <i class="fa-solid fa-award"></i> Award-Winning Research Contributions</h2>
+            <p>Explore our doctors' contributions to cutting-edge research, recognized through prestigious awards 
+              and accolades within the veterinary community.</p>
+          </div>
+          <div class="content-section">
+            <h2 style="color:  hsl(36 100% 38%);" > <i class="fa-solid fa-arrow-up-from-water-pump"></i> Advancements in Surgical Expertise</h2>
+            <p>Witness the evolution of surgical techniques and expertise, demonstrating our commitment 
+              to providing state-of-the-art medical interventions for your pets.</p>
+          </div>
+         
+         
+      
+          
+        </main>
+      
+       
+       
+      </div>
+    </div>
+
+
+</div>
+<div> <br><br></div> -->
+
+<footer style="padding: 3%; background-color: hsl(36 100% 38%); color: #ffffff;">
+ 
+<center><b>2023 All right reserved by Mic & Mac Solutions
+   </center>
+   <div class="social-icons">
+   <i class="fa-brands fa-facebook" id="facebook"></i>
+  <i class="fa-brands fa-square-instagram" ></i>
+  <i class="fa-brands fa-x-twitter"></i></b>
+  </div>
+
+
+
+</footer>
+
+<!-- <div class="row">
+  <div class="col-sm-7">
+       
+  </div>
+  <div class="col-sm-5">
+
+  </div>
+</div> -->
+
+<!-- Your page content goes here -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+ integrity="sha384-eE1oYAX+KJLd2Q9gA1imq5s9yRObyd23FQF83fN+OpK4DH+8Ch/4FZ8OuFqFqdM2" crossorigin="anonymous"></script>
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+ integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+ 
+ <script>
+  window.onscroll = function() {
+      scrollFunction();
+  };
+
+  function scrollFunction() {
+      var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          scrollToTopBtn.style.display = "block";
+      } else {
+          scrollToTopBtn.style.display = "none";
+      }
+  }
+
+  function scrollToTop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+  }
+  
+</script>
+
+</body>
+</html>

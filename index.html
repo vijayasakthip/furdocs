@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fur-Doc</title>
+    <link rel="icon" href="paw.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet">
+      <script src="https://kit.fontawesome.com/9e6d3f1177.js" crossorigin="anonymous"></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+crossorigin="anonymous" referrerpolicy="no-referrer">
+
+</head>
+<style>
+  nav {
+        display: flex;
+        justify-content: center;
+        padding: 15px 20px;
+        }
+        .navbar-nav{
+            margin-right: 12%;
+            margin-top: 2%;
+        }
+        .navbar-brand {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      font-size: 1.5rem;
+      background-color: black;
+      border-radius: 50px;
+      padding: 20px;
+      margin-left: 9.5%;
+      margin-top: 2%;
+    }
+    @media(max-width:425px)
+    {
+      .navbar-brand {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      font-size: 10px;
+      background-color: black;
+      border-radius: 50px;
+      padding: 10px;
+      margin-left: 30%;
+      margin-top: 2%;
+    }
+    }
+    @media(max-width:350px)
+    {
+      .navbar-brand {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      font-size: 10px;
+      background-color: black;
+      border-radius: 50px;
+      padding: 10px;
+      margin-left: 25%;
+      margin-top: 2%;
+    }
+    }
+   
+
+        nav a {
+        color: #000000; 
+        text-decoration: none;
+        padding: 15px 20px;
+        display: inline-block;
+        transition: background-color 0.8s ease;
+        margin-right: 40px;
+        padding-right: 20px;
+        margin-left: 30%;
+       font-family: cursive;
+        
+        }
+      
+        @media (min-width:580px){
+          nav a {
+        color: #000000; 
+        text-decoration: none;
+        padding: 15px 20px;
+        display: inline-block;
+        transition: background-color 0.8s ease;
+        margin-right: auto;
+        padding-right: 20px;
+        margin-left: auto;
+       font-family: cursive;
+        
+        }
+        }
+        @media(min-width:1020px){
+          nav a {
+        color: #000000; 
+        text-decoration: none;
+        padding: 15px 20px;
+        display: inline-block;
+        transition: background-color 0.8s ease;
+        margin-right: 40px;
+        padding-right: 20px;
+        margin-left: 30%;
+       font-family: cursive;
+        
+        }
+        }
+      
+    
+      
+
+        .col-sm-8{
+            background-color: hsl(38 61% 94%);
+           margin: 0;
+           padding: 0;
+        }
+
+          
+        
+
+        button {
+            background-color: hsl(36 100% 38%);/* Green background color */
+            color: white; /* White text color */
+            padding: 2.7%; /* Padding for the button */
+            font-size: 110%; /* Font size */
+            border: none; /* No border */
+            border-radius: 8px; /* Rounded corners */
+            cursor: pointer; /* Cursor style on hover */
+            transition: background-color 0.3s ease; /* Smooth transition on hover */
+            /* Add any additional styles to make it unique */
+        }
+
+        button:hover {
+            background-color: #9e7123; /* Darker green on hover */
+            /* Add any additional styles for the hover effect */
+        }
+        .ms{
+            margin-left: 80%;
+        }
+
+       .hii{
+        padding: 13%;
+       }
+       /* .sss{
+        margin-bottom: 70%;
+       } */
+       .kite{
+       padding-top: 4%;
+       }
+
+        .cta-container {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 30px;
+     
+      padding: 50px; 
+    }
+
+    .cta-box {
+      flex: 3;
+      padding: 2%;
+      border-radius: 10%;
+      text-align: center;
+      transition: transform 0.3s ease-in-out;
+    }
+    .col-sm-5{
+      padding-bottom: 10%;
+    
+    }
+
+    main {
+      max-width: 150ex;
+      margin: 2% auto;
+      background-color: #fff;
+      border-radius: 5%;
+      box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    }
+
+    .content-section {
+      margin-bottom: 6%;
+      border: 2px solid #806638;
+      border-radius: 2%;
+      padding: 5%;
+      height: 310px;
+    }
+
+    .ttt{
+      padding-top: 20px;
+    }
+
+    .eee{
+      margin-bottom: 14%;
+    }
+
+    .qqq{
+      margin-bottom: 13%;
+    }
+    
+    .col-sm-8 > a{
+      border-radius: 450px;
+      box-shadow: 0 0 0px rgba(0, 0, 0, 0.5);
+      /* max-width: 15ex; */
+      /* margin: 20px auto; */
+      padding: 20px;
+      margin-top: 20px;
+      background-color: #000000;
+    }
+    .content-sections{
+      margin-bottom: 30px;
+      border: 2px solid #806638;
+      border-radius: 8px;
+      padding: 20px;
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 30px;
+     
+      padding: 50px; 
+      flex: 3;
+      padding: 20px;
+      border-radius: 200px;
+      text-align: center;
+      background-color: #fff;
+      border-radius: 10%;
+    }
+
+    .form-page {
+            background-color: #ffffff;
+            color: #343a40;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+            padding-top: 20px;
+        }
+
+        .form-group label {
+            color:  hsl(0, 0%, 0%);
+        }
+        .info-box {
+            width: 300px;
+            background-color:hsl(36 100% 38%);
+            color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px hsl(36 100% 38%)(0, 0, 0, 0.8);
+            margin: 50px auto;
+            text-align: center;
+        }
+
+
+        .contact-info {
+            font-weight: bold;
+        }
+
+        .divider {
+            background-color: #ffffff;
+            height: 1px;
+            margin: 20px 0;
+        }
+
+        .social-icons i {
+            font-size: 15px;
+            border-radius: 50%;
+            background-color: hsl(36 100% 38%);
+            color: #fff;
+            margin: 0 10px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .social-icons i:hover {
+            cursor: pointer;
+        }
+        #facebook{
+            margin-left: 45%;
+        }
+        @media (max-width:768px){
+           #facebook{
+            margin-left:45%
+            
+           }
+        }
+        @media (max-width:450px){
+           #facebook{
+            margin-left: 40%;
+           }
+        }
+        @media (max-width:375px){
+           #facebook{
+            margin-left: 36%;
+           }
+        }
+        @media (max-width:350px){
+           #facebook{
+            margin-left: 35%;
+           }
+        }
+
+        .custom-container {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            position: absolute;
+            margin-right: 200ex;
+            
+        }
+
+        #zap{
+          position: absolute;
+          top: 1%;
+          left: 60%;
+
+        }
+
+        
+
+    
+
+        .custom-column {
+            text-align: center;
+            color: #ffffff;
+        }
+
+
+        #van>img{
+          width: 150px;
+        }
+
+        #ccc>img{
+          width: 170px;
+        }
+        
+        .large-image{
+          width: 30ex;
+          border-radius: 5%;
+        }
+
+        .image-cluster>img{
+          size: 500%;
+          width:100%;
+          margin-top: 10%;
+          
+        }
+        @media (max-width:500px){
+            .image-cluster>img{
+                margin-left: 0%;
+            }
+        }
+
+        #myDiv:hover {
+          transform: scale(1.05);
+          
+         
+        }
+
+        #eat:hover{
+          background-color:  hsl(38 61% 94%);
+        }
+       @media (max-width:350px)
+       {
+        #eat{
+          height: 360px;
+        }
+      }
+
+        #yatch:hover{
+          transform: scale(1.05);
+          
+        }
+        #patty{
+          background-color:  hsl(38 61% 94%);
+
+        }
+        #patty:hover{
+         
+          background-color: hsl(36 100% 38%);
+          border-color: rgb(0, 0, 0);
+
+        }
+        #patty:hover h2 {
+        color: bisque;
+    }
+    #patty h2 {
+      color:  hsl(36 100% 38%);
+    }
+    .navbar-toggler {
+  background-color: hsl(36 100% 38%);
+}
+
+
+.navbar-toggler-icon {
+  color: black;
+}
+        
+
+        #tata:hover{
+          transform: scale(1.05);
+        }
+
+        #epl:hover{
+          background-color:  hsl(38 61% 94%);
+        }
+
+        #scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 2%;
+    right: 1%;
+    background-color:  hsl(0, 0%, 0%);
+    color:  hsl(36 100% 38%);
+    border: 30%;
+    border-radius: 50%;
+    padding: 0.5%;
+    cursor: pointer;
+    box-shadow: 0 0 0 4px  hsl(36 100% 38%);
+    z-index: 1;
+}
+
+
+
+.tiger{
+  padding: 5%;
+
+}
+
+    .card {
+      background-color: hsl(0, 0%, 100%);
+      border-radius: 50px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 1.2%;
+      text-align: center;
+      width: 15%;
+      position: absolute;
+      top: 440%;
+      left: 11%;
+    }
+
+    .card h4 {
+      margin: 0;
+      font-size: 20px;
+      color:  hsl(36 100% 38%);;
+    }
+
+    .card i {
+      font-size: 150%;
+      color: hsl(36 100% 38%);
+    }
+
+    .card:hover {
+      background-color:  hsl(0, 0%, 0%);
+      color: beige;
+      cursor: pointer;
+    }
+    @media (max-width: 2560px) {
+      .card{
+        background-color: hsl(0, 0%, 100%);
+      border-radius: 50px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 1%;
+      text-align: center;
+      width: 11%;
+      bottom: 220px;
+      position: relative;
+      left: 11%;
+      }
+      #yo{
+      font-size: 10px;
+    }
+    }
+    @media (max-width: 1020px) {
+      .card{
+        background-color: hsl(0, 0%, 100%);
+      border-radius: 50px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 1%;
+      text-align: center;
+      width: 11%;
+      bottom: 220px;
+      position: relative;
+      left: 11%;
+      }
+      #yo{
+      font-size: 10px;
+    }
+    }
+    @media (max-width: 900px) {
+      .card{
+        background-color: hsl(0, 0%, 100%);
+      border-radius: 50px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 1%;
+      text-align: center;
+      width: 11%;
+      bottom: 150px;
+      position: relative;
+      left: 11%;
+      }
+      #yo{
+      font-size: 10px;
+    }
+    }
+    @media only screen and (max-width: 600px) {
+      .card{
+        background-color: hsl(0, 0%, 100%);
+      border-radius: 50px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 1%;
+      text-align: center;
+      width: 11%;
+      bottom: 80px;
+      position: relative;
+      left: 11%;
+      }
+      #yo{
+      font-size: 5px;
+    }
+    }
+    @media only screen and (max-width: 599px) {
+      .card{
+        background-color: hsl(0, 0%, 100%);
+      border-radius: 50px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 1%;
+      text-align: center;
+      width: 20%;
+      height: 8%;
+      bottom: 78px;
+      position: relative;
+      left: 11%;
+      }
+      #yo{
+      font-size: 5px;
+    }
+    }
+
+    
+
+    .cot {
+      background-color: hsl(0, 0%, 0%);
+      border-radius: 50px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 1.2%;
+      text-align: center;
+      width: 15%;
+      position: absolute;
+      top: 440%;
+      left: 28.5%;
+    }
+    .cot h4 {
+      margin: 0;
+      font-size: 20px;
+      color:  hsl(36 100% 38%);;
+    }
+
+    .cot i {
+      font-size: 150%;
+      color: hsl(36 100% 38%); 
+    }
+
+    .cot:hover {
+      background-color:  hsl(0, 0%, 100%);
+      color: beige;
+      cursor: pointer;
+    }
+    @media(max-width: 2560px) {
+      .cot{
+        background-color: hsl(0, 0%, 0%);
+      border-radius: 50px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 1.1%;
+      text-align: center;
+      width: 11%;
+      bottom: 220px;
+      margin-left: 5px;
+      position: relative;
+      
+      left: 12%;
+      }
+      #di{
+      font-size: 10px;
+    }
+    }
+    @media(max-width: 1020px) {
+      .cot{
+        background-color: hsl(0, 0%, 0%);
+      border-radius: 50px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 1.1%;
+      text-align: center;
+      width: 11%;
+      bottom: 220px;
+      margin-left: 5px;
+      position: relative;
+      
+      left: 12%;
+      }
+      #di{
+      font-size: 10px;
+    }
+    }
+    @media(max-width: 900px) {
+      .cot{
+        background-color: hsl(0, 0%, 0%);
+      border-radius: 50px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 1.1%;
+      text-align: center;
+      width: 11%;
+      bottom: 150px;
+      margin-left: 5px;
+      position: relative;
+      
+      left: 12%;
+      }
+    
+      #di{
+      font-size: 10px;
+    }
+  }
+    
+    @media (max-width: 600px) {
+      .cot{
+        background-color: hsl(0, 0%, 0%);
+      border-radius: 50px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 1.1%;
+      text-align: center;
+      width: 11%;
+      bottom: 80px;
+      margin-left: 5px;
+      position: relative;
+      left: 12%;
+      }
+      #di{
+      font-size: 5px;
+    }
+    }
+     
+    @media (max-width: 599px) {
+      .cot{
+        background-color: hsl(0, 0%, 0%);
+      border-radius: 50px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 1.1%;
+      text-align: center;
+      width: 20%;
+      height: 8%;
+      bottom: 77px;
+      margin-left: 5px;
+      position: relative;
+      left: 12%;
+      }
+      #di{
+      font-size: 5px;
+    }
+    }
+      
+
+
+
+    
+
+    #uuuu{
+      color: black;
+    }
+
+    #uuuu:hover{
+    color:hsl(36 100% 38%);
+    transition: 0.7s;
+    }
+
+    .row{
+      --bs-gutter-x:0 !important
+    }
+
+
+    
+
+       
+
+</style>
+<body>
+  <div id="scrollToTopBtn" onclick="scrollToTop()">
+    <i class="fa-solid fa-arrow-up" style="margin-left: 35%;" ></i>
+    <p style="font-size: x-small;"><b>Back to Top </b></p>
+</div>
+    <section id="title">
+        
+        <div class="row">
+         
+            <div class="col-sm-8 col-md-8">
+                  
+            <nav class="navbar navbar-expand-sm navbar-dark" >
+    
+              <div class="d-flex flex-row ms-3" >
+                <button class="navbar-toggler "  id="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              </div>
+             
+             <div class="collapse navbar-collapse" id="navbarTogglerDemo01" style="text-align: center;">
+              <ul class="navbar-nav ms-auto" id="uuuu">
+                <li class="nav-item">
+                  <a class="nav-link" href="#www"  id="uuuu">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="doc.html"  id="uuuu">Doctor</a> 
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pat.html"  id="uuuu">Forbearer</a> 
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="ser.html" id="uuuu">Services</a> 
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="train.html"  id="uuuu">Training</a> 
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#pla" id="uuuu">Contact</a> 
+                </li>
+              </ul>
+            </div>
+            </nav>
+            
+ 
+                <div class="hii">
+                <img src="paw.png" alt="Italian Trulli" style="position: relative; left: 75%";>
+              <h1>Pets: Where Love Meets a Wagging Tail.</h1><br>
+              <button>Contact Us</button>
+                </div>
+            
+               </div>
+            
+            <div class="col-sm-4 col-md-4">
+              <a class="navbar-brand" href="" style="font-family:  'Lucida Handwriting', 
+              'Brush Script MT', cursive; color:  hsl(36 100% 38%); font-size: x-large;"><b class="sss"> 
+                <i class="fa-solid fa-shield-dog"></i> Fur-Docs </b></a> 
+               
+                <div class="image-cluster">
+                <img src="doggy.png" alt="">
+                </div>
+            
+            </div>
+        </div>
+        
+        <div class="col text-center  kite" id="rrr">
+          
+            <h3 style="color:  hsl(36 100% 38%);">Our Services </h3>
+            <h1 > Why Choose Us? </h1>
+           
+          
+          <p style="padding-left: 20%;padding-right: 20%;padding-top: 2%;  ">Welcome to our pet heaven🐾! At <b style="font-family:  'Lucida Handwriting', 
+            'Brush Script MT' ;" > Fur-Docs </b>, we stand out as your ultimate choice for all things furry and feathered. 
+            Our commitment to your pet's well-being is unmatched, with a personalized touch that sets us apart.  Discover a 
+            world where passion meets expertise, ensuring your beloved companions
+             receive the love, care, and attention they deserve.</p>
+            
+        </div>
+        
+        <div class="ttt">     
+        <main>
+        
+          <div class="cta-container">
+            <div class="row">
+            <div class="col-lg-4">
+                <div class="cta-box" id="myDiv" style="cursor: pointer;">
+                    <div class="content-section" id="eat">
+                      
+                    <h2 style=" color:  hsl(36 100% 38%);">Expert Veterinary Care <i class="fa-solid fa-user-doctor"></i></h2><hr>
+                    <p>Our dedicated team of experienced veterinarians is committed to providing top-notch medical care for your furry friends. 
+                      From routine check-ups to specialized treatments, we prioritize your pet's health and well-being. </p>
+                  </div>
+                </div>
+            </div>
+        
+            <div class="col-lg-4">
+            <div class="cta-box" id="yatch" style="cursor: pointer;">
+                    <div class="content-section"  id="patty">
+                        <div class="eee">
+                      <h2 >Tailored Pet Services <i class="fa-brands fa-servicestack"></i> </h2><hr>
+                      <p>At <b style="font-family:  'Lucida Handwriting', 
+                        'Brush Script MT' ;"> Fur-Docs</b>, we understand that every pet is unique. Our range of 
+                        tailored services is designed to cater to the individual needs of your furry companions.
+                         </p>
+                         </div>
+                    </div>
+            </div>
+            </div>
+              
+            <div class="col-lg-4">
+            <div class="cta-box" id="tata" style="cursor: pointer;">
+                    <div class="content-section" id="epl">
+                      <div class="qqq" id="water">
+                    <h2 style=" color:  hsl(36 100% 38%);"> Premium Pet Products <i class="fa-solid fa-ring"></i></h2><hr>
+                    <p>Explore a curated selection of high-quality pet products at <b style="font-family:  'Lucida Handwriting', 
+                      'Brush Script MT' ;">Fur-Docs </b>. From nutritious
+                       foods to stimulating toys, we source only the finest items to enrich your pet's life.</p>
+                      </div>
+                    </div>
+            </div>
+            </div>   
+        </div>
+        </main>
+
+        </div> 
+          
+<br>
+<div id="pla" style="background-color: bisque;">
+    
+
+
+
+
+<div class="container">
+    <div class="row">
+
+        
+        <div class="col-sm-7" style="padding-top: 4%;">
+            <div class="form-page">
+                <center><h2 style="color:   hsl(36 100% 38%);">Contact Us</h2></center>
+                <form>
+                    <div class="form-group">
+                        <label for="name" style="color:hsl(36 100% 38%);">Name:</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" style="color:hsl(36 100% 38%);">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="number" style="color:hsl(36 100% 38%);">Mobile Number:</label>
+                      <input type="number" class="form-control" id="number" name="number" required>
+                  </div>
+                    <div class="form-group">
+                        <label for="message" style="color: hsl(36 100% 38%);">Message:</label>
+                        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+
+     
+        <div class="col-sm-5" >
+            <div class="info-box" >
+                <h2>Contact Information</h2>
+
+                <div class="divider"></div>
+
+                <div class="sub-division">
+                    <p class="contact-info">Online Support</p>
+                    <p>reach out at <b>ramkumar@micandmac.net</b></p>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="sub-division">
+                    <p class="contact-info">Mobile Number</p>
+                    <p>+91 98417-00071</p>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="sub-division">
+                    <p class="contact-info">Address</p>
+                    <p>9, 3rd St, Kamarajar Nagar, Gill Nagar, Choolaimedu, Chennai, Tamil Nadu 600094</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="row" >
+<div>
+  
+</div>
+  <img src="footer banner (2).svg" alt="" style="padding: 7%; border-radius: 50px;">
+  
+
+
+<div class="card">
+  <div id="indus">
+    
+   <h4 id="yo"><i class="fa-brands fa-google-play"></i> Download <br> for Android</h4>
+   
+  </div>
+</div>
+<div class="cot">
+  <div id="axis">
+    
+    <h4 id="di"><i class="fa-brands fa-apple"></i> Download <br> for IOS</h4>
+    
+   </div>
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.8/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<footer style="padding: 3%; background-color: hsl(36 100% 38%); color: #ffffff;">
+ 
+
+<center><b>2023 All right reserved by Mic & Mac Solutions</center>
+   <div class="social-icons">
+    
+        <i class="fa-brands fa-facebook" id="facebook" style=" padding-top: 1%;"></i>
+        <i class="fa-brands fa-square-instagram" ></i>
+        <i class="fa-brands fa-x-twitter"></i></b>
+       
+    </div>
+
+</footer>
+
+<script>
+  // Get the div element by its ID
+  var myDiv = document.getElementById('myDiv');
+
+  // Add a click event listener to the div
+  myDiv.addEventListener('click', function() {
+      // Redirect to another page (you can change 'targetPage.html' to the desired page)
+      window.location.href = 'doc.html';
+  });
+
+  var myDiv = document.getElementById('patty');
+
+// Add a click event listener to the div
+patty.addEventListener('click', function() {
+    // Redirect to another page (you can change 'targetPage.html' to the desired page)
+    window.location.href = 'pat.html';
+});
+
+var myDiv = document.getElementById('epl');
+
+// Add a click event listener to the div
+epl.addEventListener('click', function() {
+    // Redirect to another page (you can change 'targetPage.html' to the desired page)
+    window.location.href = 'ser.html';
+});
+
+var myDiv = document.getElementById('indus');
+
+// Add a click event listener to the div
+indus.addEventListener('click', function() {
+    // Redirect to another page (you can change 'targetPage.html' to the desired page)
+    window.location.href = 'https://play.google.com/store/games?hl=en&gl=US';
+});
+</script>
+
+
+
+        
+      
+       
+          
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+ integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+ <link href="path/to/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+ <script>
+  window.onscroll = function() {
+      scrollFunction();
+  };
+
+  function scrollFunction() {
+      var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          scrollToTopBtn.style.display = "block";
+      } else {
+          scrollToTopBtn.style.display = "none";
+      }
+  }
+
+  function scrollToTop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+  }
+</script>
+
+<script>
+  document.getElementById('navbar-toggler').addEventListener('click', function() {
+    // Change the top value of .cot when the button is clicked
+    var cotElement = document.querySelector('.cot');
+
+    // Check the current top value and toggle between two values (e.g., '11%' and '627.1%')
+    var newTop = cotElement.style.top === '634%' ? '593%' : '634%';
+
+    // Apply the new top value
+    cotElement.style.top = newTop;
+  });
+</script>
+
+<script>
+  document.getElementById('navbar-toggler').addEventListener('click', function() {
+    // Change the top value of .cot when the button is clicked
+    var cotElement = document.querySelector('.card');
+
+    // Check the current top value and toggle between two values (e.g., '11%' and '627.1%')
+    var newTop = cotElement.style.top === '634%' ? '593%' : '634%';
+
+    // Apply the new top value
+    cotElement.style.top = newTop;
+  });
+</script>
+
+
+</html>
+
+<!-- Whether it's grooming, training, or personalized dietary plans, our experts work closely with you to create a customized experience that enhances the overall happiness 
+and vitality of your pets. -->
+
+<!-- Our commitment
+to quality ensures that every product on our shelves is not only safe but also contributes to the overall
+well-being and happiness of your pets. -->

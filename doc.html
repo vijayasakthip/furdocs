@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctor Page</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" 
+  integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap" rel="stylesheet">
+      <script src="https://kit.fontawesome.com/9e6d3f1177.js" crossorigin="anonymous"></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <style>
+    /* Customize your styles here */
+    /* body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    } */
+
+    nav {
+        display: flex;
+        justify-content: center;
+        /* background-color: #000000;  */
+        /* width: 160.5ex; */
+        padding: 15px 20px;
+        /* margin-right: 20px; */
+       
+        }
+
+    .navbar-brand {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+   
+      background-color: black;
+      border-radius: 50px;
+      padding: 1.5%;
+      margin-left: 4%;
+      margin-top: 2%;
+    }
+
+    .navbar-nav .nav-link {
+      font-family: cursive;
+      /* font-weight: bolder; */
+      color: #000000;
+      /* margin-left: 5ex; */
+     
+    }
+
+    .navbar-nav .nav-item {
+      margin-left: 0ex;
+      margin-top: 2.5%;
+      text-align: center;
+    
+    }
+    .navbar-collapse{
+      margin-right: 100px;
+    }
+    @media (max-width:575px){
+      .navbar-collapse{
+      margin-right: 0px;
+    }
+    }
+    nav a {
+        color: #000000; 
+        text-decoration: none;
+        padding: 15px 20px;
+        display: inline-block;
+        transition: background-color 0.8s ease;
+        margin-right: 10%;
+        padding-right: 20px;
+        margin-left:10%;
+       font-family: cursive;
+        
+        }
+        @media (min-width:320px){
+          nav a {
+        color: #000000; 
+        text-decoration: none;
+   
+        display: inline-block;
+        transition: background-color 0.8s ease;
+        margin-right: auto;
+        
+        margin-left: 15px;
+       font-family: cursive;
+        
+        }
+      
+  }
+      
+        @media (min-width:576px){
+          nav a {
+        color: #000000; 
+        text-decoration: none;
+        padding: 15px 20px;
+        display: inline-block;
+        transition: background-color 0.8s ease;
+        margin-right: auto;
+        padding-right: 20px;
+        margin-left: auto;
+       font-family: cursive;
+        
+        }
+        .navbar-nav .nav-item {
+      margin-left: 3ex;
+      margin-top: 2.5%;
+    
+    }
+        }
+        @media (min-width:1024px){
+          nav a {
+        color: #000000; 
+        text-decoration: none;
+        padding: 15px 20px;
+        display: inline-block;
+        transition: background-color 0.8s ease;
+        margin-right: auto;
+        padding-right: 20px;
+        margin-left: auto;
+       font-family: cursive;
+        
+        }
+        .navbar-nav .nav-item {
+      margin-left: 8ex;
+      margin-top: 2.5%;
+    
+    }
+        }
+    
+      
+
+    
+
+        .content-section {
+      /* margin-bottom: -20px; */
+      /* border: 1px solid #000000; */
+      /* border-radius: 58px; */
+      padding: 2.5%;
+    }
+
+    main {
+      max-width: 110ex;
+      margin: 1.5% auto;
+      margin-right: 30px;
+      margin-left: 30px;
+      /* padding: 20px; */
+      background-color: bisque;
+      /* border-radius: 10%; */
+      box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    }
+
+    .divider {
+            background-color: #000000;
+            height: 1px;
+            margin: 20px 0;
+        }
+
+        #ioc>img{
+           margin-top: 6%;
+           /* size: 50%; */
+           height: 85%;
+           /* width: 50%; */
+           width: 80%;
+           
+           /* margin-right: 450px; */
+           /* position: absolute; */
+           margin-left: 10%;
+           /* margin-bottom: 240px; */
+           
+        }
+
+        #spl>img{
+          margin-top: 8%;
+           /* size: 50%; */
+           height: 80%;
+           /* width: 50%; */
+           width: 95%;
+           
+           /* margin-right: 450px; */
+           /* position: absolute; */
+           margin-left: 10%;
+           /* margin-bottom: 240px; */
+        }
+        @media (max-width:500px){
+            #spl>img{
+                margin-top: 5%;
+                height: 85%;
+                width: 88%;
+                margin-left: 6%;
+            }
+        }
+
+        .star
+        {  max-width: 110ex;
+      margin: 1.5% auto;
+      margin-right: 10%;
+      margin-left: 0%;
+      /* padding: 20px; */
+      background-color: rgb(255, 255, 255);
+      /* border-radius: 10%; */
+      box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+
+        }
+
+        #recl>img{
+          margin-top: 8%;
+           
+           height: 80%;
+           width: 80%;
+           /* position: absolute;
+           left: 55%; */
+           /* margin-left: 200px; */
+           /* padding: 10px; */
+           
+        }
+        @media (max-width:500px){
+            #recl>img{
+                margin-top: 8%;
+           
+                 height: 90%;
+                 width: 90%;  
+            }
+        }
+
+        #scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 4%;
+    right: 2%;
+    background-color: hsl(0, 0%, 0%);
+    color: hsl(36 100% 38%);
+    border: none; 
+    border-radius: 50%;
+    padding: 0.5%;
+    cursor: pointer;
+    box-shadow: 0 0 0 4px  hsl(36 100% 38%); 
+    z-index: 1;
+}
+p{
+  font-size: large;
+}
+
+/* #lp{
+  position: absolute;
+  top: 20%;
+} */
+
+#castrol{
+  margin-left: 10%;
+}
+
+#uv{
+  margin-bottom: 80ex;
+}
+
+.row{
+  --bs-gutter-x:0 !important
+}
+
+
+
+
+
+
+.unique-button:hover {
+  color: #ff7b00;
+
+}
+
+.abc{
+  position: relative;
+  bottom: 150px;
+  left: 15%;
+  font-family:'Lucida Handwriting', 'Brush Script MT' ;
+  background-color: hsl(36, 100%, 42%); 
+  width: 18%;
+  color: #ffffff;
+
+}
+@media(min-width: 2500px) {
+  .abc{
+     position: relative;
+  bottom:300px;
+  left: 18%;
+  font-family:'Lucida Handwriting', 'Brush Script MT' ;
+  background-color: hsl(36, 100%, 42%); 
+  width: 15%;
+  font-size: 35px;
+  color: #ffffff;}
+    }
+@media(max-width: 1024px) {
+  .abc {position: relative;
+  bottom: 125px;
+  left: 18%;
+  font-family:'Lucida Handwriting', 'Brush Script MT' ;
+  background-color: hsl(36, 100%, 42%); 
+  width: 15%;
+  font-size: 15px;
+  color: #ffffff;}
+}
+@media(max-width: 768px) {
+  .abc {position: relative;
+  bottom: 95px;
+  left: 18%;
+  font-family:'Lucida Handwriting', 'Brush Script MT' ;
+  background-color: hsl(36, 100%, 42%); 
+  width: 15%;
+  font-size: 10px;
+  color: #ffffff;}
+}
+
+@media(max-width: 425px) {
+  .abc {position: relative;
+  bottom: 50px;
+  left: 18%;
+  font-family:'Lucida Handwriting', 'Brush Script MT' ;
+  background-color: hsl(36, 100%, 42%); 
+  width: 15%;
+  font-size: 5.1px;
+  color: #ffffff;}
+}
+
+@media(max-width: 380px) {
+  .abc {position: relative;
+  bottom: 38px;
+  left: 18%;
+  font-family:'Lucida Handwriting', 'Brush Script MT' ;
+  background-color: hsl(36, 100%, 42%); 
+  width: 15%;
+  font-size: 5.1px;
+  color: #ffffff;}
+}
+
+.unique-button {
+  background-color:  #ffffff; /* Change the background color */
+  color:  #DD7A1F; /* Change the text color */
+  border: hsl(36 100% 38%); 
+  border-radius: 40px; /* Add rounded corners */
+ 
+  font-size: 250%; /* Adjust the font size */
+  width: 4.7%;
+  position: relative;
+  bottom: 160px;
+  left: 38%;
+}
+@media(min-width: 2500px) {
+  .unique-button {position: relative;
+  bottom: 300px;
+  left: 37%;
+  height: 40%;
+  font-family:'Lucida Handwriting', 'Brush Script MT' ;
+  /* background-color: hsl(36, 100%, 42%);  */
+  width: 4%;
+  font-size: 60px;
+  color: hsl(36, 100%, 42%);}
+}
+@media(max-width: 1024px) {
+  .unique-button {position: relative;
+  bottom: 125px;
+  left: 37%;
+  height: 20%;
+  font-family:'Lucida Handwriting', 'Brush Script MT' ;
+  /* background-color: hsl(36, 100%, 42%);  */
+  width: 4%;
+  font-size: 35px;
+  color: hsl(36, 100%, 42%);}
+}
+@media(max-width: 768px) {
+  .unique-button {position: relative;
+  bottom: 98px;
+  left: 37%;
+  height: 20%;
+  font-family:'Lucida Handwriting', 'Brush Script MT' ;
+
+  width: 4%;
+  font-size:25px;
+  color: hsl(36, 100%, 42%);}
+}
+
+@media(max-width: 425px) {
+  .unique-button {position: relative;
+  bottom: 52px;
+  left: 37%;
+  height: 12%;
+  font-family:'Lucida Handwriting', 'Brush Script MT' ;
+  /* background-color: hsl(36, 100%, 42%);  */
+  width: 4%;
+  font-size:12px;
+  color: hsl(36, 100%, 42%);}
+}
+
+@media(max-width: 380px) {
+  .unique-button {position: relative;
+  bottom: 37px;
+  left: 37%;
+  height: 5%;
+  font-family:'Lucida Handwriting', 'Brush Script MT' ;
+  /* background-color: hsl(36, 100%, 42%);  */
+  width: 4%;
+  font-size: xx-small;
+  color: hsl(36, 100%, 42%);}
+}
+
+
+
+.navbar-toggler {
+  background-color:  hsl(36 100% 38%);
+}
+
+/* Change the color of the lines in the toggle button */
+.navbar-toggler-icon {
+  color: rgb(0, 0, 0);
+}
+
+
+#uuuu{
+      color: black;
+    }
+
+    #uuuu:hover{
+    color:hsl(36 100% 38%);
+    transition: 0.7s;
+    }
+
+
+    .social-icons i {
+            font-size: 15px;
+            border-radius: 50%;
+            background-color: hsl(36 100% 38%);
+            color: #fff;
+            margin: 0 10px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .social-icons i:hover {
+            cursor: pointer;
+        }
+        #facebook{
+            margin-left: 45%;
+        }
+        @media (max-width:768px){
+           #facebook{
+            margin-left:45%
+            
+           }
+        }
+        @media (max-width:450px){
+           #facebook{
+            margin-left: 40%;
+           }
+        }
+        @media (max-width:375px){
+           #facebook{
+            margin-left: 36%;
+           }
+        }
+        @media (max-width:350px){
+           #facebook{
+            margin-left: 35%;
+           }
+        }
+
+/* #top{
+  height: 20px;
+} */
+
+
+/* #scrollToTopBtn:hover {
+    background-color: #2980b9; 
+    transform: scale(1.1); 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); 
+} */
+
+        /* #ffcf87 */
+  </style>
+</head>
+<body>
+  <div id="scrollToTopBtn" onclick="scrollToTop()">
+    <i class="fa-solid fa-arrow-up" style="margin-left: 35%;" ></i>
+    <p style="font-size:x-small;"><b>Back to Top </b></p>
+</div>
+  <!-- <nav class="navbar navbar-expand-lg fixed-top" style="background-color: hsl(38 61% 94%);"> -->
+    <nav class="navbar navbar-expand-sm navbar-dark" id="navb" style="background-color:hsl(38 61% 94%);">
+
+      <a class="navbar-brand" id="cb" href="" style="font-family: 'Lucida Handwriting', 
+      'Brush Script MT', cursive; color:  hsl(36 100% 38%); font-size: x-large; "><b class="sss"> 
+        <i class="fa-solid fa-shield-dog"></i> Fur-Docs </b></a> 
+        
+      <div class="d-flex flex-row me-3">
+        <button class="navbar-toggler" id="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation" id="tog">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+     
+     <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <ul class="navbar-nav ms-auto" >
+        <li class="nav-item">
+          <a class="nav-link" href="index.html" id="uuuu">Home</a>
+        </li>
+     
+        <li class="nav-item">
+          <a class="nav-link" href="#ioc" id="uuuu">Doctor</a> 
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="pat.html" id="uuuu">Forbearer</a> 
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ser.html" id="uuuu">Services</a> 
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="train.html" id="uuuu">Training</a> 
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="#pla" style="color: black;">Contact</a> 
+        </li> -->
+      </ul>
+    </div>
+    </nav>
+
+
+
+<div class="row" style="background-color:hsl(38 61% 94%);">
+
+    <img src="banner 1.svg" style="padding: 4%;">
+    <button class="unique-button" id="unique-button"><i class="fa-solid fa-circle-right"></i></button>
+    <p class="abc" id="abc">Click here to Download</p>
+    
+</div>
+<div> <br><br></div>
+<div class="row">
+  <div class="col-sm-12">
+    <div>
+  <!-- <center><h1 style="color:  hsl(36 100% 38%);"><b>Furry Companions at Fur-Doc</b></h1> -->
+    <center><h1 style="color:  hsl(36 100% 38%);"><b> Manage Appointment Easily</b></h1>
+  
+        <p style="margin-right: 17%;margin-left: 17%;font-size: large;">At Fur-Docs, our team of experienced pet doctors is dedicated to providing exceptional care for your furry companions.
+           With years of expertise in veterinary medicine, we prioritize the health and well-being of your pets.
+
+       </p></center>
+       </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-5" id="ioc">
+        <!-- <img src="https://img.freepik.com/free-photo/isolated-happy-smiling-dog-white-background-portrait-4_1562-693.jpg" alt=""> -->
+            <img src="Purr-fectly Timed Appointments.svg" alt="">
+    </div>
+    <div class="col-sm-7">
+      <div class="vit" style="font-family: Georgia, 'Times New Roman', Times, serif;">
+       
+    
+        <main>
+          <div class="content-section">
+            <h3 style="color:  hsl(36 100% 38%);" > <i class="fa-brands fa-gratipay"></i> User-Friendly Online Scheduling</h3>
+            <p>Easily book veterinary appointments online from the comfort of your home.
+              Access our intuitive platform to choose convenient time slots for your dog's visit.</p>
+          </div>
+          <div class="content-section">
+            <h3 style="color:  hsl(36 100% 38%);" > <i class="fa-regular fa-address-card"></i> Personalized Pet Profiles</h3>
+            <p>Create individual profiles for each of your dogs within our system.
+              Store essential information, including medical history and vaccination records.
+              Streamline the appointment process with pre-filled forms for efficiency.</p>
+          </div>
+          <div class="content-section">
+            <h3 style="color:  hsl(36 100% 38%);" > <i class="fa-solid fa-notes-medical"></i> Seamless Communication with Veterinarians</h3>
+            <p>Utilize secure messaging features to communicate directly with our veterinary team.
+              Share updates on your dog's health between appointments.
+              Receive guidance and advice from our experts for optimal pet care.</p>
+          </div>
+          <!-- <div class="divider"></div> -->
+<!--       
+          <div class="content-section">
+            <h2 style="color:  hsl(36 100% 38%);" >Innovative Veterinary Solutions for Optimal Health</h2>
+            <p>At Fur-Doc, your pet is not just a patient; they are a cherished member of your family,
+               and we treat them with the same love and care. Our commitment to excellence extends beyond medical expertise
+               to the genuine compassion and understanding we provide to every pet in our care.</p>
+          </div> <div class="divider"></div> -->
+      
+          <!-- <div class="content-section">
+            <h2 style="color:  hsl(36 100% 38%);" >Excellence Redefined</h2>
+            <p>With a collective experience of over three decades, our team of pet doctors brings a wealth
+               of knowledge and skill to Fur-Doc. Each veterinarian in our practice is driven by a passion 
+               for animals and a commitment to providing the best possible care.</p>
+          </div>  -->
+         
+      
+          
+        </main>
+      
+        <!-- <p style="color:  hsl(36 100% 38%);" >There's an emphasis on the collective experience of the pet doctors,
+           showcasing their dedication and passion for animals. The commitment to staying updated with the latest advancements 
+           in veterinary medicine is highlighted.
+          </p> -->
+        
+       
+      </div>
+    </div>
+
+
+</div>
+<div> <br><br></div>
+<div class="row" style="background-color: bisque;padding: 30px;">
+  <center><h1 style="color:  hsl(36 100% 38%);"><b>Consultation Management & Instant E-Prescription</b></h1>
+  
+        <!-- <p style="margin-right: 200px;margin-left: 200px;font-size: large;">At Fur-Doc, our team of experienced pet doctors is dedicated to providing exceptional care for your furry companions.
+           With years of expertise in veterinary medicine, we prioritize the health and well-being of your pets. -->
+
+       </p></center>
+    
+    <div class="col-sm-7">
+      <div class="vit" style="font-family: Georgia, 'Times New Roman', Times, serif;">
+       
+        <div class="star" style="background-color:  hsl(36 100% 38%);">
+        
+          <div class="content-section">
+            <h3 style="color: beige;" ><i class="fa-solid fa-earth-americas"></i> Streamline Consultation Management </h3>
+            <p style="color:  #f3f3f3;">
+               Seamlessly Navigate Your pet's health journey with personalized and compassionate
+                guidance every step of the way with our user-centric approach, ensuring optimal pet health and happiness.</p>
+          </div>
+          <div class="content-section">
+            <h3 style="color:hsl(38 61% 94%);" > <i class="fa-solid fa-lines-leaning"></i> Secure Access to Medical Records</h3>
+            <p style="color:  #f3f3f3;">  Our intuitive system ensures accurate and accessible information, fostering 
+              efficient communication between pet owners and veterinary professionals for optimal pet health 
+              outcomes</p>
+          </div>
+          <div class="content-section">
+            <h3 style="color: beige;" ><i class="fa-solid fa-group-arrows-rotate"></i>  Effortless E-Prescription Process </h3>
+            <p style="color:  #f3f3f3;">Efficiently manage your pet's medications through our user-friendly 
+              e-prescription platform. Simplify refills, track dosage, and ensure optimal health with ease 
+              and convenience....</p>
+          </div>
+         
+         
+      
+        </div>
+        
+      
+      
+       
+      </div>
+    </div>
+    <div class="col-sm-5" id="recl">
+      <!-- <img src="https://img.freepik.com/free-photo/isolated-happy-smiling-dog-white-background-portrait-4_1562-693.jpg" alt=""> -->
+      <img src="pawscript E-Prescription.png" alt="">
+</div>
+
+
+</div>
+<div> <br><br></div>
+<div class="row" id="yatch">
+  <center><h1 style="color:  hsl(36 100% 38%);"><b> Stay Connected with Timely Pet Care Reminders</b></h1>
+  
+        <!-- <p style="margin-right: 200px;margin-left: 200px;font-size: large;">At Fur-Doc, our team of experienced pet doctors is dedicated to providing exceptional care for your furry companions.
+           With years of expertise in veterinary medicine, we prioritize the health and well-being of your pets. -->
+
+       </p></center>
+    <div class="col-sm-5" id="spl">
+            <!-- <img src="https://img.freepik.com/free-photo/isolated-happy-smiling-dog-white-background-portrait-4_1562-693.jpg" alt=""> -->
+            <img src="https://png.pngtree.com/thumb_back/fw800/background/20230718/pngtree-yellow-envelope-and-bell-on-mobile-phone-screen-in-3d-rendered-image_3908631.jpg" alt="">
+    </div>
+    <div class="col-sm-7" >
+      <div class="vit" style="font-family: Georgia, 'Times New Roman', Times, serif;">
+       
+    
+        <main id="castrol">
+          <div class="content-section">
+            <h3 style="color:  hsl(36 100% 38%);" ><i class="fa-solid fa-clover"></i>Automated Appointment Reminders</h3>
+            <p>Stay proactive in preventive care. Receive timely alerts for your pet's vaccination due dates,
+               helping you maintain a comprehensive and up-to-date immunization schedule.</p>
+          </div>
+          <div class="content-section">
+            <h3 style="color:  hsl(36 100% 38%);" > <i class="fa-solid fa-award"></i> Medication and Treatment Reminders</h3>
+            <p>Hassle-free medication management. Get alerts for administering medications and 
+              implementing treatments, ensuring your pet's health routines are consistently followed.</p>
+          </div>
+          <div class="content-section">
+            <h3 style="color:  hsl(36 100% 38%);" > <i class="fa-solid fa-arrow-up-from-water-pump"></i> Personalized Health Notifications</h3>
+            <p> Receive notifications on specific dietary
+               recommendations, wellness milestones, and reminders for routine check-ups, enhancing 
+               the individualized care for your pet.</p>
+          </div>
+          <!-- <div class="divider"></div> -->
+<!--       
+          <div class="content-section">
+            <h2 style="color:  hsl(36 100% 38%);" >Innovative Veterinary Solutions for Optimal Health</h2>
+            <p>At Fur-Doc, your pet is not just a patient; they are a cherished member of your family,
+               and we treat them with the same love and care. Our commitment to excellence extends beyond medical expertise
+               to the genuine compassion and understanding we provide to every pet in our care.</p>
+          </div> <div class="divider"></div> -->
+      
+          <!-- <div class="content-section">
+            <h2 style="color:  hsl(36 100% 38%);" >Excellence Redefined</h2>
+            <p>With a collective experience of over three decades, our team of pet doctors brings a wealth
+               of knowledge and skill to Fur-Doc. Each veterinarian in our practice is driven by a passion 
+               for animals and a commitment to providing the best possible care.</p>
+          </div>  -->
+         
+      
+          
+        </main>
+      
+        <!-- <p style="color:  hsl(36 100% 38%);" >There's an emphasis on the collective experience of the pet doctors,
+           showcasing their dedication and passion for animals. The commitment to staying updated with the latest advancements 
+           in veterinary medicine is highlighted.
+          </p> -->
+        
+       
+      </div>
+    </div>
+
+
+</div>
+<div> <br></div>
+<footer style="padding: 3%; background-color: hsl(36 100% 38%); color: #ffffff;">
+  <!-- <img src="micmac_solutions_private_limited_logo.jpg" alt=""> -->
+<center><b>2023 All right reserved by Mic & Mac Solutions
+   </center>
+   <div class="social-icons">
+   <i class="fa-brands fa-facebook" id="facebook" ></i>
+  <i class="fa-brands fa-square-instagram" ></i>
+  <i class="fa-brands fa-x-twitter"></i></b>
+  </div>
+
+
+
+</footer>
+
+<!-- <div class="row">
+  <div class="col-sm-7">
+       
+  </div>
+  <div class="col-sm-5">
+
+  </div>
+</div> -->
+
+<!-- Your page content goes here -->
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+ integrity="sha384-eE1oYAX+KJLd2Q9gA1imq5s9yRObyd23FQF83fN+OpK4DH+8Ch/4FZ8OuFqFqdM2" crossorigin="anonymous"></script>
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+ integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+<script>
+  window.onscroll = function() {
+      scrollFunction();
+  };
+
+  function scrollFunction() {
+      var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          scrollToTopBtn.style.display = "block";
+      } else {
+          scrollToTopBtn.style.display = "none";
+      }
+  }
+
+  function scrollToTop() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+  }
+
+  
+</script>
+
+
+<script>
+  document.getElementById('navbar-toggler').addEventListener('click', function() {
+    // Change the top value of .cot when the button is clicked
+    var cotElement = document.querySelector('.abc');
+
+    // Check the current top value and toggle between two values (e.g., '11%' and '627.1%')
+    var newTop = cotElement.style.top === '89%' ? '47%' : '89%';
+
+    // Apply the new top value
+    cotElement.style.top = newTop;
+  });
+</script>
+
+<script>
+  document.getElementById('navbar-toggler').addEventListener('click', function() {
+    // Change the top value of .cot when the button is clicked
+    var cotElement = document.querySelector('.unique-button');
+
+    // Check the current top value and toggle between two values (e.g., '11%' and '627.1%')
+    var newTop = cotElement.style.top === '88.5%' ? '46.5%' : '88.5%';
+
+    // Apply the new top value
+    cotElement.style.top = newTop;
+  });
+</script>
+
+</body>
+</html>
